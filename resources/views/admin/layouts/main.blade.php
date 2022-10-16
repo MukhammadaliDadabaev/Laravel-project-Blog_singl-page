@@ -39,7 +39,7 @@
 
     <footer class="main-footer">
         <strong>My Blog &copy; 2022 <a href="https://t.me/Mukhammad_Ali_1950">Telegram</a>.</strong>
-        All rights reserved.
+        Barcha huquqlar himoyalangan.
     </footer>
 
 </div>
