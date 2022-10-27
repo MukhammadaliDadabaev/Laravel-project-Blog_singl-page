@@ -27,7 +27,7 @@
             <!-- Small boxes (Stat box) -->
             <div class="row">
                <div class="col-12">
-                   <form action="{{ route('admin.post.store') }}" method="POST">
+                   <form action="{{ route('admin.post.store') }}" method="POST" enctype="multipart/form-data">
                        @csrf
                        <div class="form-group" class="w-25">
                            <input type="text" class="form-control w-25" name="title" placeholder="Post nomi" value="{{ old('title') }}">
@@ -40,6 +40,30 @@
                            @error('content')
                            <div class="text-danger">To`ldirish shartbr 👆<br> {{ $message }}</div>
                            @enderror
+                       </div>
+                       <div class="form-group w-75">
+                           <label for="exampleInputFile">Rasm qo'shing</label>
+                           <div class="input-group">
+                               <div class="custom-file">
+                                   <input type="file" class="custom-file-input" name="preview_image">
+                                   <label class="custom-file-label" >Rasmlarni tanlang</label>
+                               </div>
+                               <div class="input-group-append">
+                                   <span class="input-group-text">YUKLASH</span>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="form-group w-75">
+                           <label for="exampleInputFile">Asosiy rasmni qo'shing</label>
+                           <div class="input-group">
+                               <div class="custom-file">
+                                   <input type="file" class="custom-file-input" name="main_image">
+                                   <label class="custom-file-label" >Asosiy rasmni tanlang</label>
+                               </div>
+                               <div class="input-group-append">
+                                   <span class="input-group-text">YUKLASH</span>
+                               </div>
+                           </div>
                        </div>
                        <div class="form-group">
                            <input type="submit" class="btn btn-primary" value="Qo'shish">

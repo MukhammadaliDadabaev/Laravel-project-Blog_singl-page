@@ -11,6 +11,7 @@ class StoreController extends Controller
     public function __invoke(StoreRequest $request)
     {
         $data = $request->validated();
+        dd($data);
         Tag::create($data);
         return redirect()->route('admin.tag.index');
     }
