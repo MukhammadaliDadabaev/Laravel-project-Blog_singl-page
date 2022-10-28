@@ -53,6 +53,9 @@
                                </div>
                            </div>
                        </div>
+                       @error('preview_image')
+                       <div class="text-danger">To`ldirish shartbr 👆<br> {{ $message }}</div>
+                       @enderror
                        <div class="form-group w-75">
                            <label for="exampleInputFile">Asosiy rasmni qo'shing</label>
                            <div class="input-group">
@@ -64,6 +67,19 @@
                                    <span class="input-group-text">YUKLASH</span>
                                </div>
                            </div>
+                       </div>
+                       @error('main_image')
+                       <div class="text-danger">To`ldirish shartbr 👆<br> {{ $message }}</div>
+                       @enderror
+                       <div class="form-group w-75">
+                           <label>Toifani tanlang</label>
+                           <select name="category_id" class="form-control">
+                               @foreach($categories as $category)
+                               <option value="{{ $category->id }}"
+                               {{ $category->id == old('category_id') ? ' selected' : '' }}
+                               >{{ $category->title }}</option>
+                               @endforeach
+                           </select>
                        </div>
                        <div class="form-group">
                            <input type="submit" class="btn btn-primary" value="Qo'shish">

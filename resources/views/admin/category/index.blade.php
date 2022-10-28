@@ -32,7 +32,7 @@
                     <!-- ./col -->
                 </div>
                 <div class="row">
-                    <div class=" col-8">
+                    <div class=" col-9">
                         <div class="card">
                             <div class="card-header">
                                 <h2 class="card-title"><b>Ma'lumotlar jadvali</b></h2>
