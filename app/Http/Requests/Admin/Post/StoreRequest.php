@@ -33,4 +33,22 @@ class StoreRequest extends FormRequest
             'tag_ids.*' => 'nullable|integer|exists:tags,id',
         ];
     }
+
+    public function messages()
+    {
+        return [
+            'title.required' => 'Ushbu qator, to`ldirilishi shart',
+            'title.string' => 'Ma`lumotlar satr turiga mos kelishi kerak',
+            'content.required' => 'Ushbu qator, to`ldirilishi shart',
+            'content.string' => 'Ma`lumotlar satr turiga mos kelishi kerak',
+            'preview_image.required' => 'Ushbu qator, to`ldirilishi shart',
+            'preview_image.file' => 'Siz faylni tanlashingiz kerak',
+            'main_image.required' => 'Ushbu qator, to`ldirilishi shart',
+            'main_image.file' => 'Siz faylni tanlashingiz kerak',
+            'category_id.required' => 'Ushbu qator, to`ldirilishi shart',
+            'category_id.integer' => 'Kategoriya identifikatori raqam bo‘lishi kerak',
+            'category_id.exists' => 'Kategoriya identifikatori ma`lumotlar bazasida bo`lishi kerak',
+            'tag_ids.array' => 'Ma`lumotlar massivini yuborish kerak',
+        ];
+    }
 }
