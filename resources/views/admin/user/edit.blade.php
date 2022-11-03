@@ -31,9 +31,15 @@
                        @csrf
                        @method('PATCH')
                        <div class="form-group">
-                           <input type="text" class="form-control" name="name" placeholder="Toifa nomi" value="{{ $user->name }}">
+                           <input type="text" class="form-control" name="name" placeholder="ISM" value="{{ $user->name }}">
                            @error('name')
-                                <div class="text-danger">To`ldirish shartbr 👆<br> {{ $message }}</div>
+                                <div class="text-danger">{{ $message }} 👆</div>
+                           @enderror
+                       </div>
+                       <div class="form-group">
+                           <input type="text" class="form-control" name="email" placeholder="EMAIL" value="{{ $user->email }}">
+                           @error('email')
+                           <div class="text-danger">{{ $message }} 👆</div>
                            @enderror
                        </div>
                        <input type="submit" class="btn btn-primary" value="Tasdiqlash">

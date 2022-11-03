@@ -8,7 +8,7 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1 class="m-0">Категории</h1>
+                        <h1 class="m-0">Foydalanuvchi | Users</h1>
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
@@ -35,7 +35,7 @@
                     <div class=" col-9">
                         <div class="card">
                             <div class="card-header">
-                                <h2 class="card-title"><b>Ma'lumotlar jadvali</b></h2>
+                                <h2 class="card-title"><b>Foydalanuvchilar jadvali</b></h2>
                                 <div class="card-tools">
                                     <div class="input-group input-group-sm" style="width: 150px;">
                                         <input type="text" name="table_search" class="form-control float-right"
@@ -54,7 +54,7 @@
                                     <thead>
                                     <tr>
                                         <th>ID</th>
-                                        <th>Sarlavha</th>
+                                        <th>Foydalanuvchi</th>
                                         <th>Ko'rish</th>
                                         <th>O'zgartirish</th>
                                         <th>O'chirish</th>

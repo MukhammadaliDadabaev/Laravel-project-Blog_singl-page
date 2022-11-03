@@ -24,7 +24,23 @@ class StoreRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required|string'
+            'name' => 'required|string',
+            'email' => 'required|string|email|unique:users',
+            'password' => 'required|string',
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+            'name.required' => 'Ushbu qator, to`ldirilishi shart',
+            'name.string' => 'Ism qator bo`lishi kerak',
+            'email.required' => 'Ushbu qator, to`ldirilishi shart',
+            'email.string' => 'Pochta satr bo`lishi kerak',
+            'email.email' => 'Pochtangiz formatga mos kelishi kerak 👉 mail@some.domain',
+            'email.unique' => 'Bu e-mailga ega foydalanuvchi allaqachon mavjud',
+            'password.required' => 'Ushbu qator, to`ldirilishi shart',
+            'password.string' => 'Parol satr bo`lishi kerak',
         ];
     }
 }
