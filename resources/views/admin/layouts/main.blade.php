@@ -51,7 +51,11 @@
     <!-- /.navbar -->
     @include('admin.includes.sidebar')
 
-    @yield('content')
+    <div class="content-wrapper">
+
+        @yield('content')
+
+    </div>
 
     <footer class="main-footer">
         <strong>My Blog &copy; 2022 <a href="https://t.me/Mukhammad_Ali_1950">Telegram</a>.</strong>

@@ -2,7 +2,7 @@
 @section('content')
 
 <!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper">
+<div class="content wrapper">
     <!-- Content Header (Page header) -->
     <div class="content-header">
         <div class="container-fluid">
@@ -41,7 +41,7 @@
                            <div class="text-danger">{{ $message }} 👆</div>
                            @enderror
                        </div>
-                       <div class="form-group w-75">
+                       <div class="form-group w-100">
                            <label>Foydalanuvchini tanlang</label>
                            <select name="role" class="form-control">
                                @foreach($roles as $id =>  $role)

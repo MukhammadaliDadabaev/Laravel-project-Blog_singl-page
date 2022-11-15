@@ -2,13 +2,13 @@
 @section('content')
 
     <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
+    <div class="wrapper">
         <!-- Content Header (Page header) -->
         <div class="content-header">
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1 class="m-0">Foydalanuvchi | Users</h1>
+                        <h1 class="m-0">Foydalanuvchilar | Users</h1>
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
@@ -26,16 +26,16 @@
             <div class="container-fluid">
                 <!-- Small boxes (Stat box) -->
                 <div class="row">
-                    <div class="col-2 mb-3">
-                        <a href="{{ route('admin.user.create') }}" class="btn btn-block btn-primary">Qo'shish</a>
+                    <div class="w-auto ml-2 mb-3">
+                        <a href="{{ route('admin.user.create') }}" class="btn btn-block btn-primary">QO'SHISH</a>
                     </div>
                     <!-- ./col -->
                 </div>
                 <div class="row">
-                    <div class=" col-9">
+                    <div class="col-9">
                         <div class="card">
                             <div class="card-header">
-                                <h2 class="card-title"><b>Foydalanuvchilar jadvali</b></h2>
+                                <h2 class="card-title my-2"><b>Foydalanuvchilar jadvali</b></h2>
                                 <div class="card-tools">
                                     <div class="input-group input-group-sm" style="width: 150px;">
                                         <input type="text" name="table_search" class="form-control float-right"
