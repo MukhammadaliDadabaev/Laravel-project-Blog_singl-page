@@ -26,7 +26,6 @@ class StoreRequest extends FormRequest
         return [
             'name' => 'required|string',
             'email' => 'required|string|email|unique:users',
-            'password' => 'required|string',
             'role' => 'required|integer',
         ];
     }
@@ -40,8 +39,6 @@ class StoreRequest extends FormRequest
             'email.string' => 'Pochta satr bo`lishi kerak',
             'email.email' => 'Pochtangiz formatga mos kelishi kerak 👉 mail@some.domain',
             'email.unique' => 'Bu e-mailga ega foydalanuvchi allaqachon mavjud',
-            'password.required' => 'Ushbu qator, to`ldirilishi shart',
-            'password.string' => 'Parol satr bo`lishi kerak',
         ];
     }
 }
